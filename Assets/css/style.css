@@ -1,0 +1,22 @@
+#container {
+    width: 50%;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: black;
+    margin: 10% auto;
+    color: white;
+    text-align: center;
+}
+
+#letters a {
+    color: blue;
+    background-color: darkgrey;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#letters a .deact {
+    color: red;
+    text-decoration: underline;
+}
