@@ -19,6 +19,7 @@ var guesses = 10;
             wins++;
             guesses = 10;
             computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
+            alert("You won!");
         }else{
             guesses--;
         }
@@ -27,6 +28,7 @@ var guesses = 10;
             losses++
             guesses = 10;
             computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
+            alert("Guess again, loser");
         }
 
     
