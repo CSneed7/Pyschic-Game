@@ -14,14 +14,16 @@ var guesses = 10;
     function gameStart() {
     document.onkeypress = function(event) {
         var userGuess = event.key;
-    
+        
         if(userGuess === computerChoice){
             wins++;
             guesses = 10;
             computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
             alert("You won!");
+            document.getElementById("letters").style.display = "visible";
         }else{
             guesses--;
+            document.getElementById(userGuess).style.visibility = "hidden";
         }
     
         if(guesses === 0){
@@ -36,6 +38,6 @@ var guesses = 10;
         document.getElementById('losses').innerHTML = losses;
         document.getElementById("guesses").innerHTML = guesses;
     }
-    }  
+}  
 
     gameStart();
