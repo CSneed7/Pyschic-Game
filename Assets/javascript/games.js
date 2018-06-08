@@ -9,6 +9,7 @@ var guesses = 10;
     var computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
 
     console.log(computerChoice)
+    document.getElementById('guesses').innerHTML = guesses;
 
     function gameStart() {
     document.onkeypress = function(event) {
