@@ -18,6 +18,7 @@ var guesses = 10;
         if(userGuess === computerChoice){
             wins++;
             guesses = 10;
+            computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
         }else{
             guesses--;
         }
@@ -25,6 +26,7 @@ var guesses = 10;
         if(guesses === 0){
             losses++
             guesses = 10;
+            computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
         }
 
     
